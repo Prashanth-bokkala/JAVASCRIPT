@@ -1,0 +1,46 @@
+* {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  background-color: #cedbf8;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.container {
+  border-radius: 20px;
+  width: 30rem;
+  background-color: #7693c2;
+  box-shadow: 20px 20px 15px gray;
+  background-image:
+      radial-gradient(at 97% 33%, hsl(18, 77%, 40%) 0, transparent 59%),
+      radial-gradient(at 82% 65%, hsl(117, 43%, 45%) 0, transparent 55%);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 80px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(70, 82, 102, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(131, 34, 34, 0.125);
+}
+
+#day{
+  padding: 20px;
+  border: 2px solid whitesmoke;
+  border-radius: 15px;
+}
+
+.clock {
+  font-size: 30px;
+  padding: 25px;
+  font-weight: bold;
+}
