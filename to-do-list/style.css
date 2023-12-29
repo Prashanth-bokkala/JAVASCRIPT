@@ -1,0 +1,83 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+      
+    }
+    
+    h1 {
+        color: #6A0572; /* Dark Purple color for a rich look */
+        background-color: #C3B1E1; /* Lavender background color */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        position: relative;
+        animation: crazyBounce 2s ease-in-out infinite alternate;
+      }
+      
+      h1:before {
+        content: "💼"; /* Briefcase emoji for a work-related touch */
+        font-size: 24px;
+        margin-right: 10px;
+      }
+      
+      h1:after {
+        content: "✨"; /* Sparkles emoji for added excitement */
+        font-size: 24px;
+        margin-left: 10px;
+      }
+      
+      @keyframes crazyBounce {
+        from {
+          transform: translateY(0);
+        }
+        to {
+          transform: translateY(-20px);
+        }
+      }
+      
+      #taskInput {
+        width: 300px;
+        padding: 10px;
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+      
+      #addTaskBtn {
+        padding: 10px;
+        margin-top: 10px;
+        cursor: pointer;
+        background-color: #6A0572;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+    .taskItem {
+      list-style-type: none;
+      margin: 10px 0;
+      padding: 8px;
+      border: 1px solid #ccc;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .taskItem.completed {
+      background-color: #d9ffd9;
+      text-decoration: line-through;
+    }
+
+    .deleteBtn {
+      background-color: #ff6666;
+      color: white;
+      border: none;
+      padding: 6px;
+      cursor: pointer;
+    }
