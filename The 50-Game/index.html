@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50-50 Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>THE 50 GAME</h1>
+    <p id="turnIndicator">Current Turn: Player A</p>
+    <p id="scores">Scores: Player A - 0, Player B - 0</p>
+    <button id="player1Btn" onclick="playTurn('Player A')">Player A</button>
+    <button id="player2Btn" onclick="playTurn('Player B')">Player B</button>
+    <button id="resetBtn" onclick="startNewGame()" class="reset-button">Reset</button>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <p id="popupMessage"></p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+    <br>
+    
+<table id="historyTable">
+    <caption>Game History</caption>
+    <thead>
+        <tr>
+            <th>Game</th>
+            <th>Winner</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+       
+    </tbody>
+</table>
+<hr>
+
+<div id="gameRules">
+    <h2>Game Rules</h2>
+    <p>
+        Welcome to "THE 50 GAME"! The rules of the game are simple:
+    </p>
+    <ol>
+        <li>Players take turns to click the "Player A" or "Player B" buttons to score runs.</li>
+        <li>A random number of runs (between 1 and 6) is added to the current player's score on each turn.</li>
+        <li>The game ends when one of the players reaches or exceeds the target score of 50.</li>
+        <li>The player with the highest score at the end of the game wins.</li>
+        <li>The game history table displays the results of the last three games played.</li>
+    </ol>
+    <p>
+        Good luck and enjoy playing "THE 50 GAME"!
+    </p>
+</div>
+
+
+<script src="script.js"></script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
